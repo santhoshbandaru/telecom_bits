@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Customer Registration Page</h1>
+    <form action="/customers" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pwd" name="pwd" required><br>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="pwd" name="ppd" required><br>
+
+
+        <label for="Date Of Birth">Date Of Birth:</label>
+        <input type="text" id="dob" name="dob" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="idProofType">ID Proof Type:</label>
+        <select id="id_type" name="id_type" required onchange="showOtherTextInput()">
+            <option value="" selected disabled>Select ID</option>
+            <option value="aadharCard">Aadhar Card</option>
+            <option value="panCard">Pan Card</option>
+            <option value="voterId">Voter ID</option>
+            <option value="passport">Passport</option>
+        </select><br>
+        <label for="idProofNumber">ID Proof Number:</label>
+        <input type="text" id="idnum" name="idnum" required><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+    <script src="registration_other_textbox.js"></script>
+</body>
+</html>
