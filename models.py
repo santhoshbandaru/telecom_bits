@@ -14,6 +14,7 @@ class Customer(Base):
     customerid = Column(Integer, primary_key=True)
     lastname = Column(String)
     firstname = Column(String)
+    password = Column(String)
     id_type = Column(String)
     idnum = Column(String)
     address = Column(String)
